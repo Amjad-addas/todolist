@@ -12,7 +12,8 @@ export default function All(){
         <missonContext.Provider
         value={{setMission:setMisson,ms:misson}}
         >
-        <div style={{width:"97%",padding:"12px"}}>
+        <div style={{width:"97%",padding:"12px"
+        }}>
            <Misson />
            <Add/>
            

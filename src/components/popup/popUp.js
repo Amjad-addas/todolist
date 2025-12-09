@@ -133,7 +133,7 @@ const PopupForm = (props) => {
               <div className="form-group">
                 <label htmlFor="phone">discription:</label>
                 <input
-                  type="tel"
+                  type="text"
                   id="phone"
                   name="description"
                   value={formData.phone}
