@@ -1,0 +1,17 @@
+.add-container{
+    height: 50px;
+  width: calc(100% - 20px);
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+  padding: 0 10px;
+}
+.btn-add{
+background-color: brown;
+color: white;
+border: none;
+outline: none;
+border-radius: 8px;
+cursor: pointer;
+}

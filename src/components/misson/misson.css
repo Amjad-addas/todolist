@@ -1,0 +1,22 @@
+.row{
+    padding: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blue;
+    margin-bottom: 12px;
+}
+.btns{
+    display: flex;
+    gap: 8px;
+}
+.misson-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-direction: column;
+}
+.text{
+    color: white;
+}

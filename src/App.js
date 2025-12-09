@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import {  Route, Routes } from 'react-router-dom';
+import Done from './screens/Done';
+import All from './screens/All';
+import NotDone from './screens/NotDone';
+import './App.css'
+import Path from './components/links/Path';
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+        <div className='container'>
+            <h1>All Mission</h1>
+            <div className='links'>
+            <Path
+            c='red'
+            title='all'
+            path='all'
+            />
+            <Path
+            title='done'
+            path='done'
+            />
+             <Path
+            title='notdone'
+            path='notdone'
+            />
+
+          </div>
+          <Routes>
+              <Route path='/' element={<All/>}/>  
+              <Route path='all' element={<All/>}/>
+              <Route path='done' element={<Done/>}/>
+              <Route path='notdone' element={<NotDone/>}/>
+
+          </Routes>
+        </div>
+
     </div>
   );
 }
-
-export default App;
